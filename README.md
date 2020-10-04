@@ -17,6 +17,11 @@ Ryan Munge
 * On clicking above live link you'll be directed to an error page click on Git search to get to the search user page.
 * Search on user name twice to get the right follower, following and time.
 
+# License
+
+* MIT license
+* Ryan Munge 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
