@@ -20,13 +20,13 @@
                     <div class="card"><div class="card-body">
                         <h4>Git-Search: {{user.login}}</h4>
                         <hr>
-                        <p><i class="fa fa-file-o" style="font-size:18px"></i> Repositories:&nbsp;&nbsp; <span class="follow">{{user.public_reposit}}</span></p>
+                        <p><i class="fa fa-file-o" style="font-size:18px"></i> Repositories: <span class="follow">{{user.public_reposit}}</span></p>
                         <hr>
-                        <p> <i class="fa fa-user" style="font-size:18px"></i> Following:&nbsp;&nbsp; <span class="follow">{{user.following}}</span></p>
+                        <p> <i class="fa fa-user" style="font-size:18px"></i> Following: <span class="follow">{{user.following}}</span></p>
                         <hr>
-                        <p> <i class="fa fa-users"style="font-size:18px"></i> Followers:&nbsp;&nbsp; <span class="follow">{{user.followers}}</span></p>
+                        <p> <i class="fa fa-users"style="font-size:18px"></i> Followers: <span class="follow">{{user.followers}}</span></p>
                         <hr>
-                        <p><i class="fa fa-clock-o" style="font-size:18px"></i> Joined:&nbsp;&nbsp; <span class="datejoined">{{user.created_at | date}}</span></p>
+                        <p><i class="fa fa-clock-o" style="font-size:18px"></i> Joined: <span class="datejoined">{{user.created_at | date}}</span></p>
                         <hr>
                       </div>
                     </div>  
@@ -34,11 +34,11 @@
                 </div> 
               </div>
               <div id="click" class="text-center">
-                  <a href="#reps"><img src="/src/assets/mouse_click.jpg" alt=" mouse_click" id="mouse-click"></a> 
+            
               </div>
               
               <div class="text-center repos" id="reps">
-                  <h2>Repositories</h2>
+                  <h2>Repositories<img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2017/240/iconmonstr-arrow-69.png" alt="Arrow 69"></h2>
                 </div>
               <div class="container allreposit">
                 <div class="card" appHighlight *ngFor="let reposit of reposit" style="width: 22rem;" class="repo">
