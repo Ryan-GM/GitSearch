@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../users';
-import { Reposit } from '../repository';
+import { Users } from '../users';
+import { Reposits } from '../reposits';
 import { UserService } from '../userservice/user.service';
 @Component({
   selector: 'app-users',
@@ -8,8 +8,8 @@ import { UserService } from '../userservice/user.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  user: User;
-  reposit: Reposit;
+  user: Users;
+  reposit: Reposits;
 
   constructor(public myService: UserService, private repositService: UserService) { }
 
@@ -22,7 +22,7 @@ export class UsersComponent implements OnInit {
         console.log(error)
       }
     );
-    this.repositService.getReposit(searchName).then(
+    this.repositService.getReposits(searchName).then(
       (results) => {
         this.reposit=this.repositService.allReposit
         console.log(this.reposit);
