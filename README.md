@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
+# Created By
+
+Ryan Munge
+
+# Description
+
+* This website should allow users to enter a GitHub   username into a form, submit it, and see names and descriptions of that person's public repositories and they can also look for repositories.
+
+* [Live view](https://ryan-gm.github.io/GitSearch/)
+
+# Guide
+
+* On clicking above live link you'll be directed to an error page click on Git search to get to the search user page.
+* Search on user name twice to get the right follower, following and time.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
