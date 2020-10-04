@@ -9,6 +9,12 @@ import { DateCountPipe } from './date-count.pipe';
 import { SearchFComponent } from './search-f/search-f.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ErrorComponent } from './error/error.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UserService } from './userservice/user.service';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,18 @@ import { ErrorComponent } from './error/error.component';
     DateCountPipe,
     SearchFComponent,
     NavbarComponent,
-    ErrorComponent
+    ErrorComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgProgressHttpClientModule,
+    NgProgressModule.forRoot(),
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
