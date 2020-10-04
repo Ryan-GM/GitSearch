@@ -33,4 +33,8 @@ export class DateCountPipe implements PipeTransform {
     return value;
   }
 
+
+  private newMethod(value: any) {
+    return Math.floor((+new Date() - +new Date(value)) / 1000);
+  }
 }
